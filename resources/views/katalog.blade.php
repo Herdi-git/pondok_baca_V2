@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,340;9..144,480;9..144,600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+<link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="news-page">
 <a href="#main-content" class="skip-link">Langsung ke konten utama</a>
@@ -16,7 +16,7 @@
 <header class="site-header scrolled" id="siteHeader">
   <div class="nav-wrap">
     <a href="{{ url('/#home') }}" class="brand">
-      <img src="{{ asset('images/logo.png') }}" alt="Logo Pondok Baca" width="70" height="150">
+      <img src="/images/logo.png" alt="Logo Pondok Baca" width="70" height="150">
       Pondok Baca
     </a>
     <nav class="nav-links" id="navLinks">
@@ -85,6 +85,6 @@
     <p class="copyright">&copy; 2026 Pondok Baca. Seluruh isi pada halaman ini adalah milik Pondok Baca.</p>
   </div>
 </footer>
-<script src="{{ asset('js/script.js') }}"></script>
+<script src="/js/script.js"></script>
 </body>
 </html>
