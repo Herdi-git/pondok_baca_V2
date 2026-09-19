@@ -90,12 +90,6 @@ const limitPreviewBooks = books => {
   });
 };
 
-if (bookGrid?.classList.contains('home-book-grid')) {
-  const previewCards = limitPreviewBooks([...cards]);
-  cards.forEach(card => { if (!previewCards.includes(card)) card.remove(); });
-  cards = bookGrid.querySelectorAll('.book-card');
-}
-
 const loadBooksFromDatabase = async () => {
   if (!bookGrid || bookGrid.classList.contains('home-book-grid')) return;
 
