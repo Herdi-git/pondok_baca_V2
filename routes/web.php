@@ -10,8 +10,15 @@ use App\Models\ContactMessage;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
+    $books = Book::query()
+        ->orderBy('title')
+        ->get()
+        ->groupBy('category')
+        ->flatMap(fn ($categoryBooks) => $categoryBooks->take(3))
+        ->values();
+
     return view('index', [
-        'books' => Book::query()->orderBy('title')->get(),
+        'books' => $books,
         'comments' => ContactMessage::query()->where('status', 'approved')->latest()->get(),
     ]);
 });
