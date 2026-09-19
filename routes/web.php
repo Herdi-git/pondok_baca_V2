@@ -17,10 +17,10 @@ Route::get('/', function () {
         ->flatMap(fn ($categoryBooks) => $categoryBooks->take(3))
         ->values();
 
-    return view('index', [
+    return response()->view('index', [
         'books' => $books,
         'comments' => ContactMessage::query()->where('status', 'approved')->latest()->get(),
-    ]);
+    ])->header('Cache-Control', 'no-store, no-cache, must-revalidate');
 });
 
 Route::get('/katalog', function () {

@@ -100,7 +100,7 @@ const loadBooksFromDatabase = async () => {
   if (!bookGrid) return;
 
   try {
-    const response = await fetch('/api/books');
+    const response = await fetch('/api/books', { cache: 'no-store' });
     if (!response.ok) throw new Error('Katalog API tidak tersedia');
     const books = await response.json();
     bookGrid.replaceChildren(...limitPreviewBooks(books).map(createBookCard));
