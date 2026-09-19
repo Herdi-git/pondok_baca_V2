@@ -97,7 +97,7 @@ if (bookGrid?.classList.contains('home-book-grid')) {
 }
 
 const loadBooksFromDatabase = async () => {
-  if (!bookGrid) return;
+  if (!bookGrid || bookGrid.classList.contains('home-book-grid')) return;
 
   try {
     const response = await fetch('/api/books', { cache: 'no-store' });
