@@ -11,17 +11,20 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $categories = ['fiksi', 'non-fiksi', 'sains', 'anak', 'sejarah'];
-    $books = collect();
+    $books = Book::query()
+        ->orderBy('title')
+        ->get()
+        ->map(function (Book $book) {
+            $category = strtolower(trim($book->category));
+            $category = str_replace(['_', ' '], '-', $category);
+            $book->category = $category;
 
-    foreach ($categories as $category) {
-        $books = $books->concat(
-            Book::query()
-                ->whereRaw('LOWER(TRIM(category)) = ?', [$category])
-                ->orderBy('title')
-                ->limit(3)
-                ->get()
-        );
-    }
+            return $book;
+        })
+        ->filter(fn (Book $book) => in_array($book->category, $categories, true))
+        ->groupBy('category')
+        ->flatMap(fn ($categoryBooks) => $categoryBooks->take(3))
+        ->values();
 
     return response()->view('index', [
         'books' => $books,
