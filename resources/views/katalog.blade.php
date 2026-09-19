@@ -58,7 +58,10 @@
       </div>
 
       <div class="book-grid" id="bookGrid">
-        <article class="book-card" data-category="sains" style="--spine:var(--rust)"><span class="book-status available">Tersedia</span><h3>Mari Bahasa Inggris</h3><p class="book-author">Prof. Yoresky Bilma Bunga</p><p class="book-cat">Sains</p></article>
+        @foreach($books as $book)
+          <article class="book-card" data-category="{{ $book->category }}" style="--spine:{{ $book->spine_color ?: 'var(--brass)' }}"><span class="book-status {{ $book->status }}">{{ $book->status === 'borrowed' ? 'Dipinjam' : 'Tersedia' }}</span><h3>{{ $book->title }}</h3><p class="book-author">{{ $book->author }}</p><p class="book-cat">{{ $book->category }}</p></article>
+        @endforeach
+        <!--
         <article class="book-card" data-category="fiksi" style="--spine:var(--rust)"><span class="book-status available">Tersedia</span><h3>Sang Dao Abadi</h3><p class="book-author">Prof. Immanuel Matasak</p><p class="book-cat">Fiksi</p></article>
         <article class="book-card" data-category="fiksi" style="--spine:var(--rust)"><span class="book-status available">Tersedia</span><h3>Legenda Pendekar Suci</h3><p class="book-author">Prof. Herdianto Bilma Bunga</p><p class="book-cat">Fiksi</p></article>
         <article class="book-card" data-category="fiksi" style="--spine:var(--rust)"><span class="book-status available">Tersedia</span><h3>Jejak di Tanah Basah</h3><p class="book-author">Rani Kusuma</p><p class="book-cat">Fiksi</p></article>
@@ -73,7 +76,7 @@
         <article class="book-card" data-category="anak" style="--spine:var(--rust)"><span class="book-status available">Tersedia</span><h3>Dongeng Sebelum Tidur</h3><p class="book-author">Tim Cendekia</p><p class="book-cat">Anak</p></article>
         <article class="book-card" data-category="anak" style="--spine:var(--rust)"><span class="book-status available">Tersedia</span><h3>Aku Ingin Pulang</h3><p class="book-author">Tim Cendekia</p><p class="book-cat">Remaja</p></article>
         <article class="book-card" data-category="sejarah" style="--spine:var(--olive)"><span class="book-status available">Tersedia</span><h3>Jejak Bayangan</h3><p class="book-author">Prof. Sukilman</p><p class="book-cat">Sejarah</p></article>
-        <article class="book-card" data-category="non-fiksi" style="--spine:var(--olive)"><span class="book-status available">Tersedia</span><h3>Seribu Satu Cara Menjadi Tidak Berguna</h3><p class="book-author">Rivaldi Kala Lembang</p><p class="book-cat">Non-Fiksi</p></article>
+        <article class="book-card" data-category="non-fiksi" style="--spine:var(--olive)"><span class="book-status available">Tersedia</span><h3>Seribu Satu Cara Menjadi Tidak Berguna</h3><p class="book-author">Rivaldi Kala Lembang</p><p class="book-cat">Non-Fiksi</p></article>-->
       </div>
     </div>
   </section>

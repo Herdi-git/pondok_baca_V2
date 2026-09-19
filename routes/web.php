@@ -5,13 +5,20 @@ use App\Http\Controllers\AdminAuthController;
 use App\Http\Controllers\AdminBookController;
 use App\Http\Controllers\AdminMessageController;
 use App\Http\Controllers\ContactMessageController;
+use App\Models\Book;
+use App\Models\ContactMessage;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('index');
+    return view('index', [
+        'books' => Book::query()->orderBy('title')->get(),
+        'comments' => ContactMessage::query()->where('status', 'approved')->latest()->get(),
+    ]);
 });
 
-Route::view('/katalog', 'katalog')->name('katalog');
+Route::get('/katalog', function () {
+    return view('katalog', ['books' => Book::query()->orderBy('title')->get()]);
+})->name('katalog');
 
 Route::get('/api/books', [BookController::class, 'index'])->name('api.books.index');
 Route::get('/api/comments', [BookController::class, 'comments'])->name('api.comments.index');

@@ -177,6 +177,9 @@
       </div>
 
       <div class="book-grid home-book-grid" id="bookGrid">
+        @foreach($books as $book)
+          <article class="book-card" data-category="{{ $book->category }}" style="--spine:{{ $book->spine_color ?: 'var(--brass)' }}"><span class="book-status {{ $book->status }}">{{ $book->status === 'borrowed' ? 'Dipinjam' : 'Tersedia' }}</span><h3>{{ $book->title }}</h3><p class="book-author">{{ $book->author }}</p><p class="book-cat">{{ $book->category }}</p></article>
+        @endforeach
       </div>
     </div>
   </section>
@@ -198,7 +201,7 @@
         </table>
       </div>
 
-      <form class="contact-form" id="contactForm" action="{{ route('contact-messages.store') }}" method="POST">
+      <form class="contact-form" id="contactForm" action="/contact-messages" method="POST">
         @csrf
         <h2>Kirim pesan</h2>
         <label>Nama
@@ -221,7 +224,11 @@
           <p>Pendapat dan pesan yang sudah disetujui akan tampil di sini.</p>
         </div>
         <div class="comments-list" id="commentsList" aria-live="polite">
-          <p class="comments-empty">Memuat komentar...</p>
+          @forelse($comments as $comment)
+            <article class="comment-card"><h3>{{ $comment->name }}</h3><p>{{ $comment->message }}</p></article>
+          @empty
+            <p class="comments-empty">Belum ada komentar yang ditampilkan.</p>
+          @endforelse
         </div>
       </section>
     </div>

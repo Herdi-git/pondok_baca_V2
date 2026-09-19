@@ -184,7 +184,7 @@ const loadComments = async () => {
       commentsList.append(article);
     });
   } catch (error) {
-    commentsList.innerHTML = '<p class="comments-empty">Komentar belum dapat dimuat.</p>';
+    // Keep server-rendered comments when the API is temporarily unavailable.
   }
 };
 
