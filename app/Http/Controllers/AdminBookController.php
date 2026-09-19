@@ -30,7 +30,7 @@ class AdminBookController extends Controller
 
     public function create(): View
     {
-        return view('admin.books.form', ['book' => new Book(), 'formAction' => route('admin.books.store')]);
+        return view('admin.books.form', ['book' => new Book(), 'formAction' => route('admin.books.store', absolute: false)]);
     }
 
     public function store(Request $request): RedirectResponse
@@ -42,7 +42,7 @@ class AdminBookController extends Controller
 
     public function edit(Book $book): View
     {
-        return view('admin.books.form', ['book' => $book, 'formAction' => route('admin.books.update', $book)]);
+        return view('admin.books.form', ['book' => $book, 'formAction' => route('admin.books.update', [$book], absolute: false)]);
     }
 
     public function update(Request $request, Book $book): RedirectResponse

@@ -17,7 +17,7 @@
     </style>
 </head>
 <body>
-<header><strong>Pondok Baca Admin</strong><nav><a href="{{ route('admin.books.index') }}">Buku</a><a href="{{ route('admin.messages.index') }}">Pesan</a><form class="inline" method="POST" action="{{ route('admin.logout') }}">@csrf<button>Keluar</button></form></nav></header>
+<header><strong>Pondok Baca Admin</strong><nav><a href="{{ route('admin.books.index') }}">Buku</a><a href="{{ route('admin.messages.index') }}">Pesan</a><form class="inline" method="POST" action="{{ route('admin.logout', absolute: false) }}">@csrf<button>Keluar</button></form></nav></header>
 <main>@if(session('success'))<div class="notice">{{ session('success') }}</div>@endif @yield('content')</main>
 </body>
 </html>
