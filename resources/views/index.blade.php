@@ -178,7 +178,7 @@
 
       <div class="book-grid home-book-grid" id="bookGrid">
         @foreach($books as $book)
-          <article class="book-card" data-category="{{ $book->category }}" style="--spine:{{ $book->spine_color ?: 'var(--brass)' }}"><span class="book-status {{ $book->status }}">{{ $book->status === 'borrowed' ? 'Dipinjam' : 'Tersedia' }}</span><h3>{{ $book->title }}</h3><p class="book-author">{{ $book->author }}</p><p class="book-cat">{{ $book->category }}</p></article>
+          <article class="book-card" data-category="{{ strtolower(trim($book->category)) }}" style="--spine:{{ $book->spine_color ?: 'var(--brass)' }}"><span class="book-status {{ $book->status }}">{{ $book->status === 'borrowed' ? 'Dipinjam' : 'Tersedia' }}</span><h3>{{ $book->title }}</h3><p class="book-author">{{ $book->author }}</p><p class="book-cat">{{ $book->category }}</p></article>
         @endforeach
       </div>
     </div>

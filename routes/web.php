@@ -10,12 +10,18 @@ use App\Models\ContactMessage;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    $books = Book::query()
-        ->orderBy('title')
-        ->get()
-        ->groupBy('category')
-        ->flatMap(fn ($categoryBooks) => $categoryBooks->take(3))
-        ->values();
+    $categories = ['fiksi', 'non-fiksi', 'sains', 'anak', 'sejarah'];
+    $books = collect();
+
+    foreach ($categories as $category) {
+        $books = $books->concat(
+            Book::query()
+                ->whereRaw('LOWER(TRIM(category)) = ?', [$category])
+                ->orderBy('title')
+                ->limit(3)
+                ->get()
+        );
+    }
 
     return response()->view('index', [
         'books' => $books,
