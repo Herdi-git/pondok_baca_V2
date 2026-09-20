@@ -24,7 +24,7 @@
 			<a href="/#books" class="nav-link">Books</a>
 			<a href="/#contact" class="nav-link">Contact</a>
 		</nav>
- <img src ="images/logo.png" alt="Logo Pondok Baca" width="70" height="150">	</div>
+ <img src ="/images/logo.png" alt="Logo Pondok Baca" width="70" height="150">	</div>
 </header>
 <main id="main-content">
 	<article class="news-article">

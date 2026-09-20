@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pondok Bac</title>
+<title>Pondok Baca</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23C08A3E'%3E%3Cpath d='M2 5c2-1 5-1 7 0v14c-2-1-5-1-7 0V5Z'/%3E%3Cpath d='M22 5c-2-1-5-1-7 0v14c2-1 5-1 7 0V5Z'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -189,11 +189,24 @@
       <div class="contact-info">
         <h2>Hubungi kami</h2>
         <p>Punya pertanyaan seputar keanggotaan, koleksi, atau kegiatan? Kirimkan pesan atau kunjungi kami langsung.</p>
-        <dl>
-          <div><dt>Alamat</dt><dd>Jl. Le'tek, Kel. Le'tek, Kec. Bittuang, Kab.Tana Toraja</dd></div>
-          <div><dt>Telepon</dt><ddS>+6282261805022</dd></div>
-          <div><dt>Email</dt><dd>pondokbacabittuang@gmail.com</dd></div>
-          <div><dt>Instagram</dt><dd>@pondok_baca_letek</dd></div>
+        <div class="contact-links" aria-label="Kontak Pondok Baca">
+          <a class="contact-link" href="https://www.google.com/maps/search/?api=1&amp;query=Jl.+Le%27tek%2C+Kel.+Le%27tek%2C+Kec.+Bittuang%2C+Kab.+Tana+Toraja" target="_blank" rel="noopener noreferrer" aria-label="Buka alamat Pondok Baca di Google Maps" title="Alamat di Google Maps">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <span class="sr-only">Alamat di Google Maps</span>
+          </a>
+          <a class="contact-link" href="https://wa.me/6282261805022" target="_blank" rel="noopener noreferrer" aria-label="Hubungi Pondok Baca melalui WhatsApp" title="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.2A8 8 0 1 1 20 11.5Z"/><path d="M8.5 8.5c.2-.4.5-.4.8-.4h.5c.2 0 .4.1.5.4l.7 1.6c.1.3.1.5-.1.7l-.5.6c.6 1.1 1.5 1.9 2.6 2.5l.6-.5c.2-.2.4-.2.7-.1l1.6.7c.3.1.4.3.4.5v.5c0 .3 0 .6-.4.8-.4.2-1 .3-1.5.1-2.2-.7-4.1-2.5-5.5-4.1-1.1-1.3-1.5-2.7-.9-3.3Z"/></svg>
+            <span class="sr-only">WhatsApp</span>
+          </a>
+          <a class="contact-link" href="mailto:pondokbacabittuang@gmail.com" aria-label="Kirim email ke Pondok Baca" title="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+            <span class="sr-only">Email</span>
+          </a>
+          <a class="contact-link" href="https://www.instagram.com/pondok_baca_letek/" target="_blank" rel="noopener noreferrer" aria-label="Buka Instagram Pondok Baca" title="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg>
+            <span class="sr-only">Instagram</span>
+          </a>
+        </div>
         <table class="hours">
           <tr><th>Senin – Jumat</th><td>08.00 – 20.00</td></tr>
           <tr><th>Sabtu</th><td>09.00 – 17.00</td></tr>

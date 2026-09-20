@@ -20,7 +20,10 @@ class BookSeeder extends Seeder
             ['title' => 'Kisah dari Rak Belakang', 'author' => 'Nadia Permata', 'category' => 'fiksi', 'status' => 'available', 'spine_color' => '#A63D2F'],
             ['title' => 'Ekonomi untuk Semua', 'author' => 'Hendra Wibowo', 'category' => 'non-fiksi', 'status' => 'borrowed', 'spine_color' => '#C08A3E'],
             ['title' => 'Petualangan Kancil dan Kawan', 'author' => 'Tim Cendekia', 'category' => 'anak', 'status' => 'available', 'spine_color' => '#35586B'],
+            ['title' => 'Dongeng Sebelum Tidur', 'author' => 'Tim Cendekia', 'category' => 'anak', 'status' => 'available', 'spine_color' => '#A63D2F'],
+            ['title' => 'Aku Ingin Pulang', 'author' => 'Tim Cendekia', 'category' => 'anak', 'status' => 'available', 'spine_color' => '#A63D2F'],
             ['title' => 'Jejak Nusantara', 'author' => 'Prof. Siti Amalia', 'category' => 'sejarah', 'status' => 'available', 'spine_color' => '#6B7A3A'],
+            ['title' => 'Jejak Bayangan', 'author' => 'Prof. Sukilman', 'category' => 'sejarah', 'status' => 'available', 'spine_color' => '#6B7A3A'],
             ['title' => 'Rahasia di Balik Bintang', 'author' => 'Dewi Anggraini', 'category' => 'sains', 'status' => 'available', 'spine_color' => '#C08A3E'],
         ];
 

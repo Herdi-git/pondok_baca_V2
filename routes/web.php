@@ -56,5 +56,5 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
 Route::get('/berita/{berita}', function (string $berita) {
     abort_unless(in_array($berita, ['berita1', 'berita2', 'berita3', 'berita4', 'berita5'], true), 404);
 
-    return response()->file(resource_path("views/berita/{$berita}.html"));
+    return view("berita.{$berita}");
 })->name('berita');

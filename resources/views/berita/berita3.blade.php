@@ -15,7 +15,7 @@
 <header class="site-header" id="siteHeader">
 	<div class="nav-wrap">
 		<a href="/#home" class="brand">
- <img src ="images/logo.png" alt="Logo Pondok Baca" width="70" height="150">			Pondok Baca
+ <img src ="/images/logo.png" alt="Logo Pondok Baca" width="70" height="150">			Pondok Baca
 		</a>
 		<nav class="nav-links" id="navLinks">
 			<a href="/#home" class="nav-link">Home</a>
@@ -30,8 +30,8 @@
 	<article class="news-article">
 		<header class="news-header">
 			<a class="back-link" href="/">&larr; Kembali ke kegiatan</a>
-			<p class="hero-kicker">Pameran</p>
-			<h1>Pameran Arsip: Sejarah Perpustakaan Desa</h1>
+			<p class="hero-kicker">Anak-anak</p>
+			<h1>Story Time: Dongeng Nusantara</h1>
 			<p class="news-meta">25 Oktober 2026 &middot; Pondok Baca Bittuang</p>
 		</header>
 		<figure class="news-cover">
