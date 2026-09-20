@@ -190,7 +190,7 @@
         <h2>Hubungi kami</h2>
         <p>Punya pertanyaan seputar keanggotaan, koleksi, atau kegiatan? Kirimkan pesan atau kunjungi kami langsung.</p>
         <div class="contact-links" aria-label="Kontak Pondok Baca">
-          <a class="contact-link" href="https://www.google.com/maps/search/?api=1&amp;query=Jl.+Le%27tek%2C+Kel.+Le%27tek%2C+Kec.+Bittuang%2C+Kab.+Tana+Toraja" target="_blank" rel="noopener noreferrer" aria-label="Buka alamat Pondok Baca di Google Maps" title="Alamat di Google Maps">
+          <a class="contact-link" href="https://www.google.com/maps/place/Pondok+Baca+Bittuang/@-2.9781647,119.6782658,17z/data=!3m1!4b1!4m6!3m5!1s0x2d93976b03e3527d:0x56e64fd4a2c9890f!8m2!3d-2.9781647!4d119.6782658!16s%2Fg%2F11t9m0wywz?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="Buka alamat Pondok Baca di Google Maps" title="Alamat di Google Maps">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
             <span class="sr-only">Alamat di Google Maps</span>
           </a>
