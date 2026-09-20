@@ -89,6 +89,7 @@ button{ font-family:inherit; cursor:pointer; }
   color:var(--cream);
 }
 .brand img{ width:70px; height:70px; object-fit:contain; flex-shrink:0; transform:translateY(16px) scale(1.5); transform-origin:left bottom; }
+.news-logo{ display:block; }
 .brand svg{ width:24px; height:24px; color:var(--brass-light); flex-shrink:0; }
 .nav-links{ display:flex; align-items:center; gap:clamp(1.1rem,2vw,2.2rem); }
 .nav-link{
@@ -314,6 +315,7 @@ button{ font-family:inherit; cursor:pointer; }
 }
 @media (max-width:760px){
   .brand img,
+  .news-logo,
   .nav-wrap > img{
     width:64px;
     height:64px;

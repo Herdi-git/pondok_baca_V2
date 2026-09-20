@@ -16,7 +16,7 @@
 <header class="site-header" id="siteHeader">
   <div class="nav-wrap">
     <a href="/#home" class="brand">
-      <img src="/images/logo.png" alt="Logo Pondok Baca" width="70" height="150">
+      <img class="news-logo" src="/images/logo.png" alt="Logo Pondok Baca" width="70" height="150">
       Pondok Baca
     </a>
     <nav class="nav-links" id="navLinks">
