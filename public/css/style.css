@@ -314,11 +314,12 @@ button{ font-family:inherit; cursor:pointer; }
   .contact-grid{ grid-template-columns:1fr; }
 }
 @media (max-width:760px){
+  :root{ --header-h:84px; }
   .brand img,
   .news-logo,
   .nav-wrap > img{
-    width:72px;
-    height:72px;
+    width:80px;
+    height:80px;
     object-fit:contain;
     transform:none;
   }
