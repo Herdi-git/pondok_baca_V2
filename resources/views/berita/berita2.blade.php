@@ -12,6 +12,7 @@
 </head>
 <body class="news-page">
 <a href="#main-content" class="skip-link">Langsung ke konten utama</a>
+
 <header class="site-header" id="siteHeader">
 	<div class="nav-wrap">
 		<a href="/#home" class="brand">
@@ -24,7 +25,10 @@
 			<a href="/#books" class="nav-link">Books</a>
 			<a href="/#contact" class="nav-link">Contact</a>
 		</nav>
- <img src="/images/logo.png" alt="Logo Pondok Baca" width="70" height="150"></div>
+		<button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="navLinks">
+			<span></span><span></span><span></span>
+		</button>
+	</div>
 </header>
 <main id="main-content">
 	<article class="news-article">
@@ -61,5 +65,6 @@
   </div>
 </footer>
 <script src="/js/berita.js"></script>
+<script src="/js/script.js"></script>
 </body>
 </html>
