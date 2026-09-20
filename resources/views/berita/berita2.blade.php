@@ -15,8 +15,8 @@
 <header class="site-header" id="siteHeader">
 	<div class="nav-wrap">
 		<a href="/#home" class="brand">
-			<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5c2-1 5-1 7 0v14c-2-1-5-1-7 0V5Z"/><path d="M22 5c-2-1-5-1-7 0v14c-2-1-5-1-7 0V5Z"/></svg>
-			Pondok Baca
+			<img src="/images/logo.png" alt="Logo Pondok Baca" width="70" height="150">
+      		Pondok Baca
 		</a>
 		<nav class="nav-links" id="navLinks">
 			<a href="/#home" class="nav-link">Home</a>

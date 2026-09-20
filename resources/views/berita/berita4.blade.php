@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kelas Komputer | Pondok Baca</title>
+<title>Pameran Arsip: Sejarah Perpustakaan Desa | Pondok Baca</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23C08A3E'%3E%3Cpath d='M2 5c2-1 5-1 7 0v14c-2-1-5-1-7 0V5Z'/%3E%3Cpath d='M22 5c-2-1-5-1-7 0v14c-2-1-5-1-7 0V5Z'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

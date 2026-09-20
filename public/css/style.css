@@ -313,6 +313,13 @@ button{ font-family:inherit; cursor:pointer; }
   .contact-grid{ grid-template-columns:1fr; }
 }
 @media (max-width:760px){
+  .brand img,
+  .nav-wrap > img{
+    width:48px;
+    height:48px;
+    object-fit:contain;
+    transform:none;
+  }
   .nav-links{
     position:fixed; inset:var(--header-h) 0 auto auto; width:min(72vw,300px);
     background:var(--forest-deep); flex-direction:column; align-items:flex-start;
