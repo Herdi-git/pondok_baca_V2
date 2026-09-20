@@ -16,7 +16,7 @@
 <header class="site-header" id="siteHeader">
   <div class="nav-wrap">
     <a href="/#home" class="brand">
-      <img src ="/images/logo.png" alt="Logo Pondok Baca" width="70" height="150">         
+      <img src="/images/logo.png" alt="Logo Pondok Baca" width="70" height="150">
       Pondok Baca
     </a>
     <nav class="nav-links" id="navLinks">
@@ -39,7 +39,7 @@
 			<p class="news-meta">18 Oktober 2026 &middot; Pondok Baca Bittuang</p>
 		</header>
 		<figure class="news-cover">
-			<img src="images/belajar-inggris.jpg" alt="Anak-anak mengikuti kelas bahasa Inggris" loading="eager">
+      <img src="/images/belajar-inggris.jpg" alt="Anak-anak mengikuti kelas bahasa Inggris" loading="eager">
 			<figcaption>Peserta berlatih percakapan sederhana dalam kegiatan kelas literasi.</figcaption>
 		</figure>
 		<div class="news-body">
@@ -48,8 +48,8 @@
 			<h2>Belajar melalui percakapan</h2>
 			<p>Di akhir kegiatan, peserta berlatih memperkenalkan diri dan membuat percakapan singkat bersama teman. Kegiatan seperti ini akan terus dikembangkan agar ruang baca menjadi tempat belajar yang terbuka untuk semua.</p>
 			<div class="news-gallery" aria-label="Foto kegiatan">
-				<figure><img src="images/belajar-inggris-1.jpg" alt="Peserta berlatih kosakata bahasa Inggris" loading="lazy"></figure>
-				<figure><img src="images/belajar-inggris-2.jpg" alt="Kegiatan kelompok di kelas literasi" loading="lazy"></figure>
+        <figure><img src="/images/belajar-inggris-1.jpg" alt="Peserta berlatih kosakata bahasa Inggris" loading="lazy"></figure>
+        <figure><img src="/images/belajar-inggris-2.jpg" alt="Kegiatan kelompok di kelas literasi" loading="lazy"></figure>
 			</div>
 		</div>
 	</article>

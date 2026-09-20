@@ -15,7 +15,7 @@
 <header class="site-header" id="siteHeader">
 	<div class="nav-wrap">
 		<a href="/#home" class="brand">
- <img src ="/images/logo.png" alt="Logo Pondok Baca" width="70" height="150">			Pondok Baca
+ <img src="/images/logo.png" alt="Logo Pondok Baca" width="70" height="150">			Pondok Baca
 		</a>
 		<nav class="nav-links" id="navLinks">
 			<a href="/#home" class="nav-link">Home</a>
@@ -35,7 +35,7 @@
 			<p class="news-meta">25 Oktober 2026 &middot; Pondok Baca Bittuang</p>
 		</header>
 		<figure class="news-cover">
-			<img src="images/kelas-komputer.jpg" alt="Anak-anak belajar menggunakan komputer" loading="eager">
+			<img src="/images/kelas-komputer.jpg" alt="Anak-anak belajar menggunakan komputer" loading="eager">
 			<figcaption>Peserta mempraktikkan pengoperasian dasar komputer.</figcaption>
 		</figure>
 		<div class="news-body">
@@ -44,8 +44,8 @@
 			<h2>Keterampilan digital untuk kehidupan sehari-hari</h2>
 			<p>Kelas ini diharapkan menjadi langkah awal bagi peserta untuk menggunakan teknologi sebagai sarana belajar, berkarya, dan berkomunikasi. Peserta juga diajak memahami pentingnya menjaga data pribadi saat berada di internet.</p>
 			<div class="news-gallery" aria-label="Foto kegiatan">
-				<figure><img src="images/kelas-komputer-1.jpg" alt="Peserta berlatih mengetik di komputer" loading="lazy"></figure>
-				<figure><img src="images/kelas-komputer-2.jpg" alt="Pendamping membantu peserta belajar" loading="lazy"></figure>
+				<figure><img src="/images/kelas-komputer-1.jpg" alt="Peserta berlatih mengetik di komputer" loading="lazy"></figure>
+				<figure><img src="/images/kelas-komputer-2.jpg" alt="Pendamping membantu peserta belajar" loading="lazy"></figure>
 			</div>
 		</div>
 	</article>
